@@ -1,7 +1,4 @@
 # leetcode
-coding
-echo "# leetcode" >> README.md
-
 
 The optimum C++ solutions for the leetcode
 
