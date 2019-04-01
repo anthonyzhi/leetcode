@@ -19,3 +19,19 @@ public:
         return false;
     }
 };
+
+
+//方法二 哈希表
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+       map<ListNode*,int> hashMap;
+        ListNode* p=head;
+        while(p){
+            if(++hashMap[p]>1)
+                return true;
+            p=p->next;
+        }
+        return false;
+    }
+};
