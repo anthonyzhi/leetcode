@@ -15,9 +15,7 @@ public:
     vector<int> shuffle() {
         vector<int>ans=original;
         for(int i=1;i<ans.size();i++){
-            int r=rand()%(i+1);
-            if(r!=i)
-                swap(ans[r],ans[i]);
+            swap(ans[rand()%(i+1)],ans[i]);
         }
         return ans;
     }
